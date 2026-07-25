@@ -31,6 +31,26 @@ historical data/
 *.xlsx
 # Note: images/ folder is intentionally NOT excluded (documentation screenshots)
 
+# Databases (runtime data, not source -- collector regenerates these)
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Logs (operational/runtime, not source)
+*.log
+mes_pipeline_log.txt
+
+# Caches (disk-backed, regenerated at runtime)
+chart_cache/
+
+# Personal/private notes -- not dashboard source, kept out of the public repo
+knowledge_base/
+TRADING_PLAN.md
+
+# Claude Code local settings (machine-specific, not project config)
+.claude/
+
 # IDE
 .vscode/
 .idea/
